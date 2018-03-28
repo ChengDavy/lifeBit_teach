@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b1149cee-a4ed-3c47-ab78-037da2f88114++9453",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b1149cee-a4ed-3c47-ab78-037da2f88114++9453" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b1149cee-a4ed-3c47-ab78-037da2f88114++9453" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2A210F7E-3A42-4490-B470-82AE86B19B55",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b1149cee-a4ed-3c47-ab78-037da2f88114++9453" : "v2.0.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "lifeBit_teach",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "lifeBit\/lifeBit_teach\/lifeBit_teach.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/121.41.51.218:8443\/svn\/shoubiaoerqi",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b1149cee-a4ed-3c47-ab78-037da2f88114++9453"
+    }
+  ]
+}

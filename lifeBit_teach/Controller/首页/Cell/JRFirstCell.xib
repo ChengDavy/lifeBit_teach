@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JRFirstCell" rowHeight="84" id="KGk-i7-Jjw" customClass="JRFirstCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHc-n4-51j" customClass="JRCornerView">
+                        <rect key="frame" x="15" y="10" width="290" height="59"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-dZ-dN4">
+                                <rect key="frame" x="174" y="10" width="106" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="SD2-I6-oRp"/>
+                                    <constraint firstAttribute="height" constant="52" id="mAp-Wf-WFc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="testScore_btn.png"/>
+                                <connections>
+                                    <action selector="checkDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rbm-bb-06D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一年级三班上午第三节课" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3up-if-U0C">
+                                <rect key="frame" x="10" y="10" width="198" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAx-16-Ddj">
+                                <rect key="frame" x="174" y="5" width="106" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3up-if-U0C" firstAttribute="top" secondItem="jHc-n4-51j" secondAttribute="top" constant="10" id="0iK-Mb-r3J"/>
+                            <constraint firstAttribute="trailing" secondItem="QsG-dZ-dN4" secondAttribute="trailing" constant="10" id="1Co-R9-lUe"/>
+                            <constraint firstAttribute="bottom" secondItem="3up-if-U0C" secondAttribute="bottom" constant="10" id="2Xp-ix-hFf"/>
+                            <constraint firstItem="QsG-dZ-dN4" firstAttribute="top" secondItem="jHc-n4-51j" secondAttribute="top" constant="10" id="5GW-x2-9L9"/>
+                            <constraint firstItem="ZAx-16-Ddj" firstAttribute="top" secondItem="QsG-dZ-dN4" secondAttribute="top" constant="-5" id="ADw-hD-KdR"/>
+                            <constraint firstItem="ZAx-16-Ddj" firstAttribute="trailing" secondItem="QsG-dZ-dN4" secondAttribute="trailing" id="B2g-Nq-SrT"/>
+                            <constraint firstItem="ZAx-16-Ddj" firstAttribute="bottom" secondItem="QsG-dZ-dN4" secondAttribute="bottom" id="Ynj-p4-8JX"/>
+                            <constraint firstItem="3up-if-U0C" firstAttribute="leading" secondItem="jHc-n4-51j" secondAttribute="leading" constant="10" id="cfD-nt-DlF"/>
+                            <constraint firstItem="ZAx-16-Ddj" firstAttribute="leading" secondItem="QsG-dZ-dN4" secondAttribute="leading" id="czL-DZ-uso"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="jHc-n4-51j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="L6e-IR-w6O"/>
+                    <constraint firstAttribute="trailing" secondItem="jHc-n4-51j" secondAttribute="trailing" constant="16" id="U16-ak-c96"/>
+                    <constraint firstAttribute="bottom" secondItem="jHc-n4-51j" secondAttribute="bottom" constant="10" id="WYp-Gy-6l6"/>
+                    <constraint firstItem="jHc-n4-51j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dfw-6w-rsO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="btnTitleLb" destination="ZAx-16-Ddj" id="qKb-tE-rMA"/>
+                <outlet property="checkDetailBtn" destination="QsG-dZ-dN4" id="yy8-pd-Xyp"/>
+                <outlet property="classNameLb" destination="3up-if-U0C" id="TcP-6O-zxp"/>
+            </connections>
+            <point key="canvasLocation" x="317.5" y="409"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="testScore_btn.png" width="269" height="99"/>
+    </resources>
+</document>

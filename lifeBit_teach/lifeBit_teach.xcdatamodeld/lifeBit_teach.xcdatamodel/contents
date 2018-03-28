@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15F34" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="BluetoothDataModel" representedClassName="BluetoothDataModel" syncable="YES">
+        <attribute name="bluetootData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bluetootDataData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dataType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recordDateData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="watchMac" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HaveClassModel" representedClassName="HaveClassModel" syncable="YES">
+        <attribute name="cClassname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cGradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cGradeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classTime" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduleType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HistoryTestModel" representedClassName="HistoryTestModel" syncable="YES">
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="good" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="greadId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="greadName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no_pass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LessonPlanIdUnitModel" representedClassName="LessonPlanIdUnitModel" syncable="YES">
+        <attribute name="grade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanPhase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teachId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitNo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unitSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LessonPlanModel" representedClassName="LessonPlanModel" syncable="YES">
+        <attribute name="grade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanPhase" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="lessonPlanSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sSportSkill" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sSportSkillID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teachId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NotStudentModel" representedClassName="NotStudentModel" syncable="YES">
+        <attribute name="sClassId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sGradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sGradeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sStartTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="studentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ScheduleModel" representedClassName="ScheduleModel" syncable="YES">
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classTime" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gradeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rowClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startClassDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="week" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SchoolModel" representedClassName="SchoolModel" syncable="YES">
+        <attribute name="schoolArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schoolAreaId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schoolId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schoolName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ScoreModel" representedClassName="ScoreModel" syncable="YES">
+        <attribute name="cClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gradeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scoreArr" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="studentClassId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teachId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StudentModel" representedClassName="StudentModel" syncable="YES">
+        <attribute name="sBirthDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sClassId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sGradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sGradeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sIsCallOver" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sNational" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentNo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TestModel" representedClassName="TestModel" syncable="YES">
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="greadId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="greadName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserModel" representedClassName="UserModel" syncable="YES">
+        <attribute name="uAccount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uSchoolAreaID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uSchoolId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uSchoolName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uSigner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacher_No" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherAge" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherIco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherJobTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherMobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherProfessional" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="VersionModel" representedClassName="VersionModel" syncable="YES">
+        <attribute name="books_Classify_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="books_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courses_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grade_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mac_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="student_v" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uTeacherId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WatchModel" representedClassName="WatchModel" syncable="YES">
+        <attribute name="ipadIdentifying" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teachBoxId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teachBoxName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teachBoxNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teacherId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="watchId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="watchMAC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="watchNo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BluetoothDataModel" positionX="9" positionY="153" width="128" height="150"/>
+        <element name="HaveClassModel" positionX="18" positionY="162" width="128" height="240"/>
+        <element name="HistoryTestModel" positionX="9" positionY="162" width="128" height="255"/>
+        <element name="LessonPlanIdUnitModel" positionX="27" positionY="153" width="128" height="210"/>
+        <element name="LessonPlanModel" positionX="18" positionY="144" width="128" height="195"/>
+        <element name="NotStudentModel" positionX="9" positionY="162" width="128" height="195"/>
+        <element name="ScheduleModel" positionX="9" positionY="135" width="128" height="270"/>
+        <element name="SchoolModel" positionX="9" positionY="162" width="128" height="105"/>
+        <element name="ScoreModel" positionX="27" positionY="126" width="128" height="285"/>
+        <element name="StudentModel" positionX="-36" positionY="9" width="128" height="210"/>
+        <element name="TestModel" positionX="9" positionY="153" width="128" height="195"/>
+        <element name="UserModel" positionX="9" positionY="162" width="128" height="285"/>
+        <element name="VersionModel" positionX="9" positionY="162" width="128" height="165"/>
+        <element name="WatchModel" positionX="54" positionY="171" width="128" height="165"/>
+    </elements>
+</model>

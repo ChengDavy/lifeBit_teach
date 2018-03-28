@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="La4-KN-GNL" customClass="HJHistoryTestCell">
+            <rect key="frame" x="0.0" y="0.0" width="569" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="La4-KN-GNL" id="uo7-fk-6mz">
+                <rect key="frame" x="0.0" y="0.0" width="569" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-7C-yKE">
+                        <rect key="frame" x="10" y="0.0" width="549" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-vl-9i1">
+                                <rect key="frame" x="10" y="18" width="44" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC0-dk-GER">
+                                <rect key="frame" x="398" y="10" width="143" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Egr-qb-YTT"/>
+                                    <constraint firstAttribute="width" constant="143" id="HiT-i1-G7c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="再次测试" backgroundImage="color_nav">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="againTestProjectClick:" destination="La4-KN-GNL" eventType="touchUpInside" id="hig-p8-6rG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xEp-vl-9i1" firstAttribute="leading" secondItem="FO6-7C-yKE" secondAttribute="leading" constant="10" id="c3q-Di-GJK"/>
+                            <constraint firstItem="xEp-vl-9i1" firstAttribute="centerY" secondItem="FO6-7C-yKE" secondAttribute="centerY" id="crz-hW-GMh"/>
+                            <constraint firstItem="nC0-dk-GER" firstAttribute="top" secondItem="FO6-7C-yKE" secondAttribute="top" constant="10" id="ro1-We-JpH"/>
+                            <constraint firstAttribute="trailing" secondItem="nC0-dk-GER" secondAttribute="trailing" constant="10" id="vRd-pa-fWg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FO6-7C-yKE" secondAttribute="bottom" constant="1" id="3qF-Kd-fwa"/>
+                    <constraint firstItem="FO6-7C-yKE" firstAttribute="leading" secondItem="uo7-fk-6mz" secondAttribute="leading" constant="10" id="Mzp-GR-Les"/>
+                    <constraint firstAttribute="trailing" secondItem="FO6-7C-yKE" secondAttribute="trailing" constant="10" id="dN4-yM-nDT"/>
+                    <constraint firstItem="FO6-7C-yKE" firstAttribute="top" secondItem="uo7-fk-6mz" secondAttribute="top" id="rTI-Br-VlT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="againTestBtn" destination="nC0-dk-GER" id="wHW-i7-Wfu"/>
+                <outlet property="projectNameLb" destination="xEp-vl-9i1" id="MiK-Df-Uno"/>
+            </connections>
+            <point key="canvasLocation" x="300.5" y="243"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="color_nav" width="50" height="50"/>
+    </resources>
+</document>

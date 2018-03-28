@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="F15-jj-kJe" customClass="HJNumberView">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="264"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-Xf-ZJJ">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="66"/>
+                    <subviews>
+                        <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuE-zR-fTe" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="jpT-3D-hED"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksH-AR-lae" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="256" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="8">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="Mif-a9-8r0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-XE-efg" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="512" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="7">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="yIz-nJ-2VY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ksH-AR-lae" firstAttribute="top" secondItem="ALB-Xf-ZJJ" secondAttribute="top" id="8M4-XU-cty"/>
+                        <constraint firstItem="ksH-AR-lae" firstAttribute="leading" secondItem="BuE-zR-fTe" secondAttribute="trailing" id="Hbe-Jt-ImQ"/>
+                        <constraint firstItem="BuE-zR-fTe" firstAttribute="top" secondItem="ALB-Xf-ZJJ" secondAttribute="top" id="bew-w5-Mwy"/>
+                        <constraint firstItem="PEE-XE-efg" firstAttribute="width" secondItem="BuE-zR-fTe" secondAttribute="width" id="ciA-Ym-w2A"/>
+                        <constraint firstAttribute="bottom" secondItem="PEE-XE-efg" secondAttribute="bottom" id="dkb-l9-nfh"/>
+                        <constraint firstItem="ksH-AR-lae" firstAttribute="width" secondItem="BuE-zR-fTe" secondAttribute="width" id="flK-gM-qvo"/>
+                        <constraint firstItem="BuE-zR-fTe" firstAttribute="leading" secondItem="ALB-Xf-ZJJ" secondAttribute="leading" id="hmn-j1-dhN"/>
+                        <constraint firstAttribute="bottom" secondItem="BuE-zR-fTe" secondAttribute="bottom" id="l3P-ub-a13"/>
+                        <constraint firstAttribute="height" constant="66" id="lQF-XX-CYa"/>
+                        <constraint firstAttribute="trailing" secondItem="PEE-XE-efg" secondAttribute="trailing" id="nI9-3X-CbI"/>
+                        <constraint firstAttribute="bottom" secondItem="ksH-AR-lae" secondAttribute="bottom" id="ohd-fl-tbn"/>
+                        <constraint firstItem="PEE-XE-efg" firstAttribute="top" secondItem="ALB-Xf-ZJJ" secondAttribute="top" id="tcm-AI-4Wd"/>
+                        <constraint firstItem="PEE-XE-efg" firstAttribute="leading" secondItem="ksH-AR-lae" secondAttribute="trailing" id="xvf-iy-r6d"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-oF-vxd">
+                    <rect key="frame" x="0.0" y="66" width="768" height="66"/>
+                    <subviews>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6E-Zg-reH" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="6">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="v90-mo-BpB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3h-nw-3PC" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="256" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="5">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="dNX-cr-CDj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIk-K8-MyM" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="512" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="4">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="Glk-BU-Sjy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="T3h-nw-3PC" firstAttribute="leading" secondItem="h6E-Zg-reH" secondAttribute="trailing" id="0LA-NO-4Yv"/>
+                        <constraint firstAttribute="trailing" secondItem="KIk-K8-MyM" secondAttribute="trailing" id="9KF-7c-trJ"/>
+                        <constraint firstAttribute="height" constant="66" id="DUR-Uk-KL9"/>
+                        <constraint firstItem="KIk-K8-MyM" firstAttribute="leading" secondItem="T3h-nw-3PC" secondAttribute="trailing" id="Gkt-Vc-bki"/>
+                        <constraint firstAttribute="bottom" secondItem="KIk-K8-MyM" secondAttribute="bottom" id="IOu-gT-VZr"/>
+                        <constraint firstAttribute="bottom" secondItem="h6E-Zg-reH" secondAttribute="bottom" id="NvP-FE-f96"/>
+                        <constraint firstItem="h6E-Zg-reH" firstAttribute="leading" secondItem="zfd-oF-vxd" secondAttribute="leading" id="SIX-uB-RkR"/>
+                        <constraint firstItem="T3h-nw-3PC" firstAttribute="top" secondItem="zfd-oF-vxd" secondAttribute="top" id="T8U-sm-wDl"/>
+                        <constraint firstItem="h6E-Zg-reH" firstAttribute="top" secondItem="zfd-oF-vxd" secondAttribute="top" id="VP9-4U-lan"/>
+                        <constraint firstItem="KIk-K8-MyM" firstAttribute="width" secondItem="h6E-Zg-reH" secondAttribute="width" id="ddT-gF-NCo"/>
+                        <constraint firstItem="T3h-nw-3PC" firstAttribute="width" secondItem="h6E-Zg-reH" secondAttribute="width" id="ipZ-n9-nHa"/>
+                        <constraint firstAttribute="bottom" secondItem="T3h-nw-3PC" secondAttribute="bottom" id="lvd-CM-Zbu"/>
+                        <constraint firstItem="KIk-K8-MyM" firstAttribute="top" secondItem="zfd-oF-vxd" secondAttribute="top" id="oC1-gf-p9D"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZY-5v-2P7">
+                    <rect key="frame" x="0.0" y="132" width="768" height="66"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-2e-mY6" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="512" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="8pb-9J-fcc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-e0-ukP" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="256" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="lGa-iz-Vhi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cij-Xt-ksX" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="bky-25-HXH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DRr-e0-ukP" secondAttribute="bottom" id="0CD-Mi-nFq"/>
+                        <constraint firstAttribute="height" constant="66" id="43C-fq-scm"/>
+                        <constraint firstItem="hbc-2e-mY6" firstAttribute="leading" secondItem="DRr-e0-ukP" secondAttribute="trailing" id="53X-lE-7xR"/>
+                        <constraint firstAttribute="trailing" secondItem="hbc-2e-mY6" secondAttribute="trailing" id="6WE-g6-6eQ"/>
+                        <constraint firstAttribute="bottom" secondItem="hbc-2e-mY6" secondAttribute="bottom" id="78d-Pd-jFG"/>
+                        <constraint firstItem="cij-Xt-ksX" firstAttribute="leading" secondItem="kZY-5v-2P7" secondAttribute="leading" id="Gqz-Ro-bcW"/>
+                        <constraint firstItem="DRr-e0-ukP" firstAttribute="leading" secondItem="cij-Xt-ksX" secondAttribute="trailing" id="Gtl-Vs-WBQ"/>
+                        <constraint firstItem="DRr-e0-ukP" firstAttribute="top" secondItem="kZY-5v-2P7" secondAttribute="top" id="MIQ-wv-yiR"/>
+                        <constraint firstItem="cij-Xt-ksX" firstAttribute="top" secondItem="kZY-5v-2P7" secondAttribute="top" id="cWv-4s-h36"/>
+                        <constraint firstItem="DRr-e0-ukP" firstAttribute="width" secondItem="cij-Xt-ksX" secondAttribute="width" id="hPd-kj-n8u"/>
+                        <constraint firstItem="hbc-2e-mY6" firstAttribute="top" secondItem="kZY-5v-2P7" secondAttribute="top" id="kU2-B4-br9"/>
+                        <constraint firstAttribute="bottom" secondItem="cij-Xt-ksX" secondAttribute="bottom" id="llB-To-7Qe"/>
+                        <constraint firstItem="hbc-2e-mY6" firstAttribute="width" secondItem="cij-Xt-ksX" secondAttribute="width" id="uZL-P8-Nx1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyC-uQ-kj9">
+                    <rect key="frame" x="0.0" y="198" width="768" height="66"/>
+                    <subviews>
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZF-kW-muW" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="512" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="清除">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="nvP-4T-fGF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSE-6H-emn" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal" title="0">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNumberBtnItem:" destination="F15-jj-kJe" eventType="touchUpInside" id="qUg-iz-UfU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5v-Mr-hks" customClass="HJKeyboardBtn">
+                            <rect key="frame" x="256" y="0.0" width="256" height="66"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="H5v-Mr-hks" firstAttribute="leading" secondItem="MSE-6H-emn" secondAttribute="trailing" id="5X5-sy-yIH"/>
+                        <constraint firstItem="cZF-kW-muW" firstAttribute="top" secondItem="ZyC-uQ-kj9" secondAttribute="top" id="GTa-WE-Vt5"/>
+                        <constraint firstAttribute="bottom" secondItem="MSE-6H-emn" secondAttribute="bottom" id="HVa-nB-jI0"/>
+                        <constraint firstAttribute="bottom" secondItem="cZF-kW-muW" secondAttribute="bottom" id="YpJ-Uq-OVK"/>
+                        <constraint firstItem="H5v-Mr-hks" firstAttribute="top" secondItem="ZyC-uQ-kj9" secondAttribute="top" id="Z4j-Qs-adZ"/>
+                        <constraint firstItem="MSE-6H-emn" firstAttribute="leading" secondItem="ZyC-uQ-kj9" secondAttribute="leading" id="b7Z-Kp-OCn"/>
+                        <constraint firstAttribute="bottom" secondItem="H5v-Mr-hks" secondAttribute="bottom" id="biJ-6h-7nF"/>
+                        <constraint firstItem="cZF-kW-muW" firstAttribute="leading" secondItem="H5v-Mr-hks" secondAttribute="trailing" id="cO3-SV-gBc"/>
+                        <constraint firstAttribute="trailing" secondItem="cZF-kW-muW" secondAttribute="trailing" id="fSu-xU-uJu"/>
+                        <constraint firstItem="MSE-6H-emn" firstAttribute="top" secondItem="ZyC-uQ-kj9" secondAttribute="top" id="gwm-zm-pgh"/>
+                        <constraint firstAttribute="height" constant="66" id="ovF-1c-Tqp"/>
+                        <constraint firstItem="H5v-Mr-hks" firstAttribute="width" secondItem="MSE-6H-emn" secondAttribute="width" id="ru7-AB-Fmq"/>
+                        <constraint firstItem="cZF-kW-muW" firstAttribute="width" secondItem="MSE-6H-emn" secondAttribute="width" id="wwd-rl-E47"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zfd-oF-vxd" secondAttribute="trailing" id="0jv-sc-sg3"/>
+                <constraint firstAttribute="trailing" secondItem="ALB-Xf-ZJJ" secondAttribute="trailing" id="4xm-oS-lD8"/>
+                <constraint firstItem="zfd-oF-vxd" firstAttribute="top" secondItem="ALB-Xf-ZJJ" secondAttribute="bottom" id="F6j-6v-SNb"/>
+                <constraint firstItem="ALB-Xf-ZJJ" firstAttribute="leading" secondItem="F15-jj-kJe" secondAttribute="leading" id="Jry-po-zDi"/>
+                <constraint firstItem="ZyC-uQ-kj9" firstAttribute="leading" secondItem="F15-jj-kJe" secondAttribute="leading" id="KTo-Jy-wcb"/>
+                <constraint firstItem="ALB-Xf-ZJJ" firstAttribute="top" secondItem="F15-jj-kJe" secondAttribute="top" id="KoZ-J5-vEn"/>
+                <constraint firstAttribute="trailing" secondItem="kZY-5v-2P7" secondAttribute="trailing" id="MdW-ch-HpZ"/>
+                <constraint firstItem="kZY-5v-2P7" firstAttribute="leading" secondItem="F15-jj-kJe" secondAttribute="leading" id="Xag-6H-CT4"/>
+                <constraint firstAttribute="trailing" secondItem="ZyC-uQ-kj9" secondAttribute="trailing" id="Yhb-ao-izZ"/>
+                <constraint firstItem="ZyC-uQ-kj9" firstAttribute="top" secondItem="kZY-5v-2P7" secondAttribute="bottom" id="erl-Ew-AJR"/>
+                <constraint firstItem="kZY-5v-2P7" firstAttribute="top" secondItem="zfd-oF-vxd" secondAttribute="bottom" id="ooU-vF-89T"/>
+                <constraint firstItem="zfd-oF-vxd" firstAttribute="leading" secondItem="F15-jj-kJe" secondAttribute="leading" id="z6L-XH-zkx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="382" y="-74"/>
+        </view>
+    </objects>
+</document>

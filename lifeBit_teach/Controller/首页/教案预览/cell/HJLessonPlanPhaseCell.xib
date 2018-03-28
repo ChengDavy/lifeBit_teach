@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ufx-hV-ggI" customClass="HJLessonPlanPhaseCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ufx-hV-ggI" id="9sf-9d-Q2y">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="准备阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FST-as-nlu">
+                        <rect key="frame" x="10" y="13" width="76" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总用时5分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-zE-vcn">
+                        <rect key="frame" x="641" y="13" width="107" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="FST-as-nlu" firstAttribute="leading" secondItem="9sf-9d-Q2y" secondAttribute="leading" constant="10" id="2rn-U1-bks"/>
+                    <constraint firstItem="zOR-zE-vcn" firstAttribute="centerY" secondItem="9sf-9d-Q2y" secondAttribute="centerY" id="Bfn-GO-ucy"/>
+                    <constraint firstItem="FST-as-nlu" firstAttribute="centerX" secondItem="9sf-9d-Q2y" secondAttribute="centerX" id="IEs-t9-zHZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zOR-zE-vcn" secondAttribute="trailing" constant="20" id="moh-kD-AfX"/>
+                    <constraint firstAttribute="trailing" secondItem="zOR-zE-vcn" secondAttribute="trailing" constant="20" id="x18-hp-Wor"/>
+                    <constraint firstItem="FST-as-nlu" firstAttribute="centerY" secondItem="9sf-9d-Q2y" secondAttribute="centerY" id="zmY-Te-jhO"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="IEs-t9-zHZ"/>
+                        <exclude reference="moh-kD-AfX"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phaseLb" destination="FST-as-nlu" id="Te9-R9-Xc9"/>
+                <outlet property="totalTimeLb" destination="zOR-zE-vcn" id="QaO-Gk-L7q"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

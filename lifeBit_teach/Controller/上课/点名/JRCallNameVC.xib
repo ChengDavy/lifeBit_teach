@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JRCallNameVC">
+            <connections>
+                <outlet property="callOverView" destination="VIv-BE-tj2" id="AeC-Dz-rq3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIv-BE-tj2" customClass="HJCallOverView">
+                    <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VIv-BE-tj2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3au-S5-Hdt"/>
+                <constraint firstItem="VIv-BE-tj2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="4q2-AL-s7i"/>
+                <constraint firstAttribute="trailing" secondItem="VIv-BE-tj2" secondAttribute="trailing" id="P68-h0-Qea"/>
+                <constraint firstAttribute="bottom" secondItem="VIv-BE-tj2" secondAttribute="bottom" id="cj8-HZ-vjo"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

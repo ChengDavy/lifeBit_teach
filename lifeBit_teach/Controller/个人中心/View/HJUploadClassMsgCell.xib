@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HJUploadClassMsgCell">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="549" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6n-rT-XJt">
+                        <rect key="frame" x="10" y="0.0" width="529" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="三年级（8）班" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxo-8M-L3U">
+                                <rect key="frame" x="10" y="18" width="120" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iG-XD-RhP">
+                                <rect key="frame" x="376" y="10" width="143" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="1zw-ya-hl1"/>
+                                    <constraint firstAttribute="height" constant="38" id="qvV-Vp-cuv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="上传心率数据">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startUploadDataClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UB5-cC-Sfd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SZ-oX-2Qq">
+                                <rect key="frame" x="230" y="19" width="40" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="上课时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-3j-vr6">
+                                <rect key="frame" x="140" y="19" width="80" height="20"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0iG-XD-RhP" secondAttribute="trailing" constant="10" id="14h-TG-SXJ"/>
+                            <constraint firstItem="3SZ-oX-2Qq" firstAttribute="leading" secondItem="0z9-3j-vr6" secondAttribute="trailing" constant="10" id="1RU-ym-1gb"/>
+                            <constraint firstItem="0z9-3j-vr6" firstAttribute="leading" secondItem="Hxo-8M-L3U" secondAttribute="trailing" constant="10" id="4TA-G0-ioN"/>
+                            <constraint firstItem="Hxo-8M-L3U" firstAttribute="centerY" secondItem="f6n-rT-XJt" secondAttribute="centerY" id="8QJ-aC-HWW"/>
+                            <constraint firstItem="3SZ-oX-2Qq" firstAttribute="centerY" secondItem="f6n-rT-XJt" secondAttribute="centerY" id="LOp-IL-TdP"/>
+                            <constraint firstItem="0z9-3j-vr6" firstAttribute="centerY" secondItem="f6n-rT-XJt" secondAttribute="centerY" id="PhX-Hn-9eO"/>
+                            <constraint firstItem="0iG-XD-RhP" firstAttribute="top" secondItem="f6n-rT-XJt" secondAttribute="top" constant="10" id="XJf-pZ-YHy"/>
+                            <constraint firstItem="Hxo-8M-L3U" firstAttribute="leading" secondItem="f6n-rT-XJt" secondAttribute="leading" constant="10" id="gbm-uo-gpj"/>
+                            <constraint firstAttribute="bottom" secondItem="0iG-XD-RhP" secondAttribute="bottom" constant="10" id="vXb-Dv-q2B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="f6n-rT-XJt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BjM-TG-OYg"/>
+                    <constraint firstAttribute="bottom" secondItem="f6n-rT-XJt" secondAttribute="bottom" constant="1" id="Nt6-Bu-lDi"/>
+                    <constraint firstItem="f6n-rT-XJt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ovD-EH-JeD"/>
+                    <constraint firstAttribute="trailing" secondItem="f6n-rT-XJt" secondAttribute="trailing" constant="10" id="tsy-au-H0P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="classNameLb" destination="Hxo-8M-L3U" id="Hfe-ks-zou"/>
+                <outlet property="startClassTimeLb" destination="0z9-3j-vr6" id="fet-3Q-Syv"/>
+                <outlet property="testProjectLb" destination="3SZ-oX-2Qq" id="hI9-Rk-B9w"/>
+                <outlet property="uploadBtn" destination="0iG-XD-RhP" id="X15-7s-VYr"/>
+            </connections>
+            <point key="canvasLocation" x="321.5" y="257"/>
+        </tableViewCell>
+    </objects>
+</document>

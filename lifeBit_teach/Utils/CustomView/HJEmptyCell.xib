@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="555" id="KGk-i7-Jjw" customClass="HJEmptyCell">
+            <rect key="frame" x="0.0" y="0.0" width="625" height="555"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="625" height="554.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_Cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-pV-BKf">
+                        <rect key="frame" x="205" y="120" width="215" height="215"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="215" id="Syf-eW-YKU"/>
+                            <constraint firstAttribute="width" constant="215" id="dVY-kH-mXA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B9m-pV-BKf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="9EV-kF-Zg7"/>
+                    <constraint firstItem="B9m-pV-BKf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-50" id="quJ-S5-NoV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="constriintHeiht" destination="Syf-eW-YKU" id="Nz6-If-ZlW"/>
+                <outlet property="contraintWithd" destination="dVY-kH-mXA" id="GMu-aS-gxq"/>
+                <outlet property="emptyImageView" destination="B9m-pV-BKf" id="r0b-Il-ccP"/>
+            </connections>
+            <point key="canvasLocation" x="355.5" y="559.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_Cell.png" width="215" height="214"/>
+    </resources>
+</document>

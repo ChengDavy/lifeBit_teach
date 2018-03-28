@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JRCusTeaPlanBtnCell" rowHeight="78" id="KGk-i7-Jjw" customClass="JRCusTeaPlanBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdn-J8-7ra">
+                        <rect key="frame" x="10" y="0.0" width="300" height="59"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aye-Df-PKR">
+                                <rect key="frame" x="240" y="0.0" width="60" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Eo3-Sr-dbB"/>
+                                </constraints>
+                                <state key="normal" image="add_unit.png"/>
+                                <connections>
+                                    <action selector="gotoAddPlan:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fRb-hy-CCf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFa-Am-0mM">
+                                <rect key="frame" x="10" y="19" width="72" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-Ck-JFz">
+                                <rect key="frame" x="0.0" y="58" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="905-7Z-Yih"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i3a-Ck-JFz" secondAttribute="bottom" id="07f-Uf-Yv1"/>
+                            <constraint firstItem="RFa-Am-0mM" firstAttribute="leading" secondItem="bdn-J8-7ra" secondAttribute="leading" constant="10" id="1m0-yj-rGy"/>
+                            <constraint firstItem="aye-Df-PKR" firstAttribute="top" secondItem="bdn-J8-7ra" secondAttribute="top" id="2g2-Ce-gDp"/>
+                            <constraint firstAttribute="trailing" secondItem="aye-Df-PKR" secondAttribute="trailing" id="GrC-8C-zhJ"/>
+                            <constraint firstItem="i3a-Ck-JFz" firstAttribute="leading" secondItem="bdn-J8-7ra" secondAttribute="leading" id="blp-tC-0aV"/>
+                            <constraint firstItem="RFa-Am-0mM" firstAttribute="centerY" secondItem="bdn-J8-7ra" secondAttribute="centerY" id="bxC-ve-O7w"/>
+                            <constraint firstAttribute="height" constant="59" id="pwH-9m-vbm"/>
+                            <constraint firstAttribute="trailing" secondItem="i3a-Ck-JFz" secondAttribute="trailing" id="tX3-ze-NLz"/>
+                            <constraint firstItem="i3a-Ck-JFz" firstAttribute="top" secondItem="aye-Df-PKR" secondAttribute="bottom" id="u4s-CB-HPk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bdn-J8-7ra" secondAttribute="bottom" id="2ft-6q-dMq"/>
+                    <constraint firstItem="bdn-J8-7ra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4Vw-Zd-tcF"/>
+                    <constraint firstAttribute="trailing" secondItem="bdn-J8-7ra" secondAttribute="trailing" constant="10" id="iLF-Us-9rw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="buttenCellBtn" destination="aye-Df-PKR" id="fhb-NP-lkt"/>
+                <outlet property="buttenCellLabel" destination="RFa-Am-0mM" id="X0x-PN-e2F"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_unit.png" width="37" height="37"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JRCheckTeachPlanCell" rowHeight="123" id="KGk-i7-Jjw" customClass="JRCheckTeachPlanCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.篮球的胯下运球要领" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7d-8R-uHy">
+                        <rect key="frame" x="10" y="8" width="175" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胯下运球的前提是摆好姿势，两腿要一前一后的分开，差不多和半蹲的一样。上身要挺直不要低头。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8u-gP-azU">
+                        <rect key="frame" x="10" y="39" width="300" height="65"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15分" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mY-Ip-Dbn">
+                        <rect key="frame" x="273" y="8" width="37" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d7d-8R-uHy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hd0-7w-kbD"/>
+                    <constraint firstItem="0mY-Ip-Dbn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Mh7-oC-ltY"/>
+                    <constraint firstItem="q8u-gP-azU" firstAttribute="top" secondItem="0mY-Ip-Dbn" secondAttribute="bottom" constant="10" id="Z8n-Al-Plb"/>
+                    <constraint firstAttribute="trailing" secondItem="q8u-gP-azU" secondAttribute="trailing" constant="10" id="ZrY-fC-bwg"/>
+                    <constraint firstItem="d7d-8R-uHy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eCu-Bf-hTB"/>
+                    <constraint firstItem="q8u-gP-azU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fWS-1m-GxB"/>
+                    <constraint firstAttribute="trailing" secondItem="0mY-Ip-Dbn" secondAttribute="trailing" constant="10" id="kNB-t5-viL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="contentLabel" destination="q8u-gP-azU" id="4tx-J8-Wfd"/>
+                <outlet property="titleLabel" destination="d7d-8R-uHy" id="Yjm-MN-mMA"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="484.5"/>
+        </tableViewCell>
+    </objects>
+</document>
